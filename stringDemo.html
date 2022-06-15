@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstname = "akanksha"
+        var secondname = "joshi"
+        var name = firstname.concat(secondname)
+        console.log(name);
+        console.log(firstname.length);
+        console.log(firstname.charAt(3))
+        console.log(name.slice(7,12))
+
+        var csv = "abc,def,ghi"
+        console.log(csv.split(","));
+
+        //MathDemo
+        console.log(Math.sqrt(13.2));
+
+        //Date Demo
+        var today = new Date();
+        console.log(today);
+
+        // new Date(year, month, day,hours, minutes, seconds, milliseconds)
+        // new Date("October 13, 2014 11:13:00");
+
+        // new Date(10000000000);
+
+        console.log(today.getDate())
+        console.log(today.getMilliseconds())
+        (function(){
+console.log(1);
+setTimeout(function(){console.log(2)},1000);
+setTimeout(function(){console.log(3)},0);
+console.log(4);
+})();
+
+    </script>
+</body>
+</html> 

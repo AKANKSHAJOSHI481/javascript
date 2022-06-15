@@ -1,0 +1,40 @@
+--> In javascript declaration of a variable is given by "var".
+--> There is some magic in javascript, there are no boundaries .It is not like c++ or c
+--> We do not have strict typing.
+--> There is one operator in javascript , operator name is "typeof".It will give which type of variable it is.
+--> Both float numbers and int numbers are considered as numbers in javascript.
+--> for initializing a string ,we can use both " and '.
+--> null is basically an empty object.
+--> There is no need of giving semi colon after end of each statement.
+--> There are no much restrictions.
+--> Like console there is one more built in object we have.
+--> That is "document".
+--> 
+
+--> 7 different types of data types in js
+undefined = a variable that havent set to anything yet.
+null = set this to be something and that thing is nothing.
+boolean = true or false.
+string
+symbol
+number
+object = can store a lot of different key value pairs.
+
+-->for declaring a variable = 'var' 
+{
+
+    var name = "akanksha"
+}
+
+--> can also use let and const
+{
+    let myname = "akankshajoshi"
+    const pi = 3.14
+}
+
+-->difference between var ,let and const is var can be used further in the whole program , 
+  let can be used in the scope defined .const is a variable that never change
+
+
+  ---Storing values with Assignment Operator --------------------------------
+  

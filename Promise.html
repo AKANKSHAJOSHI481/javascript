@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //async call defined 
+        var p1 = new Promise((resolve, reject) => {
+            //some complicated work
+            var result = 4*9+12/32;
+            if(result == 1){
+                resolve("everything is working fine");
+            }
+            else{
+                reject("something went wrong");
+            }
+        });
+
+
+        console.log("statement1");
+        console.log("statement2");
+       
+        setTimeout(()=>{console.log("call back queue")},0);
+        //front end m consume karna h
+        p1.then(()=>{console.log("its fullfilled")},()=>{console.log("its rejected")});
+        
+
+        // job queue >> call back queue
+        //way 2 to consume promise
+        async function callp1(){
+            try{
+                const p1output = await p1  //behaviing like sync call
+            console.log("promise Output" , p1output);}
+            catch(e){
+                console.log("error occured")
+            }
+            finally{
+                
+            }
+        }
+        callp1()
+
+        p1.then(()=>{console.log("its fullfilled")},()=>{console.log("its rejected")})
+          .catch(()=>console.log("error occured!!!!"))
+        console.log("statement3");
+        console.log("statement4");
+    </script>
+</body>
+</html>

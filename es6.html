@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s1 = "this is a normal es5 string initialization";
+        console.log("this is s1 value",s1, "get it here");
+        console.log(`I am ${s1}`);
+
+        function add(a,b){
+            return a + b;
+        }
+        var sum = (a,b)=>{             //arrow function call
+            return a+b;
+        }
+
+        console.log(`sum is ${sum(2,3)}`)
+
+        var sum1 = ()=>console.log('abc');
+        sum1();
+
+        var sum2=a=>a*2;
+        console.log(sum2(16));
+
+        var ages = [12,13,14,15,16];
+        console.log(ages.map((age)=>age+4));
+
+
+        //IFFE function
+
+        (function(){
+            console.log("self invoking fnction getting called !!!!");
+            return 4;
+        })();
+       
+        //generator function
+        function* g1(i){
+            yield i;
+            yield i+10;
+            yield i+20;
+            return "done"
+        }
+
+        var a = g1(20);
+        console.log(a.next())
+        console.log(a.next())
+        console.log(a.next())
+        console.log(a.next())
+        
+
+
+        // difference between var, let and const
+
+        const KEY = "constant"
+       // KEY = "abc"; // throw an error == > const is constant through out the code
+        var a = "abc";
+        a = 10;
+
+        // cannot redeclare a variable which has been declared alr using let keyword
+        let b;
+        b = 20;
+        b = "abc";
+
+        // let cannot be redeclared but it can be re-initialized
+        //const cannot be redeclared neither reinitialized
+        // var can be redeclared and reinitialized
+
+        //ternary operator
+
+        (2<3)? console.log("its true"):console.log("its false");
+    </script>
+
+</body>
+</html>

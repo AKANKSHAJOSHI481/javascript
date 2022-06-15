@@ -1,0 +1,29 @@
+<!-- browser has some memory.
+how can we use that data of browser.
+so basically there are 3 ways :
+==>creating a cookie 
+==> creating a local storage.
+==> creating a session storage.
+==> Data can survive a full browser restart(local storage) , and for a page refresh.(session storage) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createStorage(){
+            //two built in objects
+            localStorage.setItem("batch40","excellent");
+            console.log(localStorage.getItem("batch40"));
+            sessionStorage.setItem("currentTopic" ,"JS");
+            console.log(sessionStorage.getItem("currentTopic"));
+        }
+        //createStorage();
+    </script>
+</body>
+</html>

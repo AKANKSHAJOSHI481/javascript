@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var firstname = "akanksha";
+        console.log("firstname", firstname);
+        var secondname = "joshi";
+        console.log("secondname", secondname);
+        secondname = firstname;
+        console.log("firstname", firstname);
+        console.log("secondname", secondname);
+        firstname = "abhay";
+        console.log("firstname", firstname);
+        console.log("secondname", secondname);
+        
+
+        var person = {
+            name: "akanksha",
+            age : 100,
+            hobbies :["sleeping","dancing","learning"],
+            address:{
+                country:"India",
+                state:"Gujarat",
+                zip:1234567,
+            }
+
+        }
+
+        console.log("first person",person);
+        console.log(person.hobbies);
+        console.log(person['hobbies']);
+        console.log(person.hobbies[0]);
+        
+    </script>
+</body>
+</html>

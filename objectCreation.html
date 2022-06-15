@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = {
+            name: "akanksha",
+            age : 100,
+            hobbies :["sleeping","dancing","learning"],
+            address:{
+                country:"India",
+                state:"Gujarat",
+                zip:1234567,
+            }
+
+        }
+
+        person.education="B.Tech";
+        console.log(person);
+        person.hobbies.push("gardening");
+        console.log(person.hobbies.length);
+
+        person.address.city="hyd";
+        console.log(person.address);
+        console.log(Object.keys(person));
+        console.log(Object.values(person));
+
+        var stringPerson = JSON.stringify(person);
+        console.log(stringPerson)
+        console.log(JSON.parse(stringPerson));
+
+        //object destructing
+
+        var {name, age, hobbies, address, education} = person;
+        console.log(hobbies);
+        console.log(address);
+
+        //way to create an object
+
+        function createPerson(name,age){
+            this.name = name;
+            this.age = age;
+        }
+
+        var akanksha = new createPerson("akanksha" , 19);
+        console.log(akanksha);
+        var abhay = new createPerson("abhay" , 20);
+        console.log(abhay);
+
+        var me = new Object();
+        me.firstName = "Akanksha";
+        me.secondName ="Joshi";
+        console.log(me);
+    </script>
+</body>
+</html>

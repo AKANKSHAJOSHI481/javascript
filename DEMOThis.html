@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(this) // this is pointing to window object
+        function check(){
+            console.log(`this referes to in the function :${this}`);
+        }
+        check()
+
+        function checkthis(){
+           // "use strict"
+            console.log(`this referes to in the function  strictly:${this}`);
+            console.log(`this referes to in the function s:${this == window}`)
+        }
+        checkthis()
+
+        //use this keyword in simple object
+        var car = {
+            brand : "BMW",
+            getBrand:function(){
+                console.log(`brand is ${this.brand}`)
+            }
+        }
+
+        console.log(car.getBrand())
+        
+    </script>
+</body>
+</html>

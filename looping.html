@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(count = 0; count <15 ; count++){
+           // console.log("count = " ,count+1);
+        }
+        var a = [1,2,3,4,5,6,7,8,9,10];
+        for(count = 0;count<=9;count++){
+            //console.log(a[count]);
+            if(a[count] == 3){
+                console.log("This is 3rd element");
+            }
+        }
+
+        //for loop variations for-in and for-of
+        for (index in a){
+            console.log(a[index]);
+        }
+        for(value of a){
+            console.log(value);
+        }
+
+        //for in variation can be used for objects as well
+        var person = {
+            name: "akanksha",
+            age : 100,
+            hobbies :["sleeping","dancing","learning"],
+            address:{
+                country:"India",
+                state:"Gujarat",
+                zip:1234567,
+            }
+
+        }
+
+        for(key in person){
+            console.log(key);
+        }
+        var counter = 0;
+        while(counter <= 3){
+            console.log("printing counter");
+            counter++;
+        }
+        
+
+        //do-while loop
+
+        do{
+            console.log("printing without any condition",counter);
+        }while(counter<3);
+
+        //arrays - > foreach ;MDN;
+
+        const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+    </script>
+</body>
+</html>

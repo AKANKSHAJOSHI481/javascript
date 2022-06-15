@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // seq, release of qp , writing exam, relaes of certifivate
+        function releaseqp(){
+            console.log("Release qp"); 
+        }
+
+        // function writeAnswer(){
+        //     console.log("I am writing ,I will take some time ");
+        //     setTimeout(()=>{console.log("I am done writing paper")},3000);
+        // }
+
+        // function Releaseparticity(){
+        //     console.log("yeah!! u received a certificate");
+        // }
+
+        // releaseqp();
+        // writeAnswer();
+        // Releaseparticity();
+
+        function writeAnswer(cb){
+            console.log("I am writing ,I will take some time ");
+            setTimeout(()=>{console.log("I am done writing paper")
+            cb();
+            },3000);
+        }
+
+        function Releaseparticity(){
+            console.log("yeah!! u received a certificate");
+        }
+
+        writeAnswer(Releaseparticity);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const ratingData = [
+    { restaurant: 'KFC', rating: 5 },
+    { restaurant: 'Burger King', rating: 4 },
+    { restaurant: 'KFC', rating: 3 },
+    { restaurant: 'Domino', rating: 2 },
+    { restaurant: 'Subway', rating: 3 },
+    { restaurant: 'Domino', rating: 1 },
+    { restaurant: 'Subway', rating: 4 },
+    { restaurant: 'Pizza Hut', rating: 5 }
+];
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The rating of "+ratingData[2].restaurant+" is " + ratingData[2].rating;
+</script>
+
+</body>
+</html>

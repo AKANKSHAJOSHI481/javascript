@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class GeometricShape{
+            height;
+            width;
+            canbeDrawn(){
+
+            }
+            calArea(){
+                var area=this.height * this.width;
+                console.log(area);
+            }
+        }
+
+        var square = new GeometricShape();
+        square.height = 90;
+        square.width = 90;
+        square.calArea();
+
+        var rectangle = new GeometricShape();
+        rectangle.height = 100;
+        rectangle.width = 90;
+        rectangle.calArea();
+
+        class Student{
+            name; 
+            grade;
+            marks = [10,15,20];
+            calculateprecentage(){
+                var percentage;
+                 for(var i=0; i < this.marks.length ; i++){
+                     percentage = percentage + this.marks[i];
+                 }
+                 console.log(percentage / marks.length);
+            }
+        }
+
+        var akanksha = new Student();
+        akanksha.name = akanksha;
+        akanksha.grade = 10;
+        akanksha.marks[0] = 10;
+        akanksha.marks[1] = 15;
+        akanksha.marks[2] = 20;
+        akanksha.calculateprecentage();
+    </script>
+</body>
+</html>
